@@ -5,18 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Dog Name</title>
+    <link rel="shortcut icon" href="./image/jack-russell-terrier.png" type="image/x-icon">
+
+    <!-- css fils -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- ------- -->
+
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --------- -->
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-wrapper">
-            <h1>Search Dog Name</h1>
-            <input type="text" id="dogName" placeholder="Enter Dog Name">
-            <button id="searchBtn">Search</button>
+    <div class="container mt-7 mx-auto">
+        <div class="form-wrapper gap-3 flex items-center flex-col">
+            <h1 class="font-bold text-2xl text-orange-950">Search Dog Breed</h1>
+            <div class="relative ">
+                <input type="text" class="p-2 px-9 border hover:border-orange-800 rounded-xl w-full " id="searchInput"
+                    placeholder="Enter Dog Name...">
+                <i class="fa-solid fa-paw left-3 top-3 absolute" style="color: #9a3412;"></i>
+            </div>
+
+            <div class="button-wrapper">
+                <button type="button" class="w-28 border p-2 rounded-md text-orange-950 hover:border-orange-800"
+                    id="deleteBtn">Delete</button>
+                <button type="button" class="w-28 border p-2 rounded-md text-orange-950 hover:border-orange-800"
+                    id="searchBtn">Search</button>
+            </div>
         </div>
 
-        <div class="information-wrapper">
+        <div class="information-wrapper mt-10">
             <!-- information will be add her -->
+
         </div>
 
     </div>
