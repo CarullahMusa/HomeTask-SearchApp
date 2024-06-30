@@ -1,21 +1,24 @@
 class getApi {
     constructor() {
         this.url = "https://api.api-ninjas.com/v1/dogs?name=";
+        this.options = {
+            method: 'GET',
+            headers: {
+                'X-Api-Key': "P3DhU14ufvl40QglG15osQ==IemL2YQgM24IhLJi"
+            }
+        };
     }
 
     async getDogsInformation(value) {
         try {
-            const response = await (await fetch(`${this.url}${value}`, {
-                method: 'GET',
-                headers: {
-                    'X-Api-Key': "P3DhU14ufvl40QglG15osQ==IemL2YQgM24IhLJi"
-                }
-            })).json();
+            const response = await (await fetch(`${this.url}${value}`, this.options)).json();
 
             // response.map((information) => {
+            //     console.log(information)
             //     addToHtml(information);
             // });
             response.forEach((information) => {
+                // console.log(information)
                 addToHtml(information);
             });
 
@@ -23,4 +26,5 @@ class getApi {
             console.log(err)
         }
     }
+
 }

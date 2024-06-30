@@ -25,8 +25,9 @@
         <div class="form-wrapper gap-3 flex items-center flex-col">
             <h1 class="font-bold text-2xl text-orange-950">Search Dog Breed</h1>
             <div class="relative ">
-                <input type="text" class="p-2 px-9 border hover:border-orange-800 rounded-xl w-full " id="searchInput"
-                    placeholder="Enter Dog Name...">
+                <input type="text"
+                    class="p-2 px-9 border active:border-orange-800 hover:border-orange-800 rounded-xl w-full "
+                    id="searchInput" placeholder="Enter Dog Name...">
                 <i class="fa-solid fa-paw left-3 top-3 absolute" style="color: #9a3412;"></i>
             </div>
 
@@ -40,7 +41,20 @@
 
         <div class="information-wrapper mt-10">
             <!-- information will be add her -->
+            <div id="" class="dog-card items-center grid-cols-2 grid ">
 
+
+            </div>
+            <div class="dog-info hidden">
+                <select name="" id="selectOptions" class="">
+                    <option selected value="default">Select value...</option>
+                    <option value="good-with">Good with:</option>
+                    <option value="behaviour">behaviour: </option>
+                    <option value="size-life-expectancy">size and life expectancy: </option>
+                </select>
+
+                <div id="infoDisplay"></div>
+            </div>
         </div>
 
     </div>
