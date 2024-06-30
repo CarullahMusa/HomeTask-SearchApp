@@ -1,21 +1,42 @@
 h2 {
     font-size: large;
     font-weight: bold;
+    color: #451a03;
+    padding: 7px 0px;
 }
 
 img {
     width: 400px;
     background-size: cover;
+    border-radius: 10px;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+summary {
+    position: sticky;
+    top: 0px;
+    font-weight: 500;
+    backdrop-filter: blur(20px);
+    color: #78350f;
 }
 
-li {
-    list-style-type: none;
-    padding: 10px;
+details {
+    padding: 5px 0px;
+    max-height: 100px;
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+.parent-card {
+    box-shadow: 0px 6px 13px 6px #fef3c7;
+    background-color: #fde68a;
+    padding: 14px;
+    border-radius: 0.75rem;
+}
+
+p {
+    padding-left: 15px;
+    font-weight: 300;
+    color: #d97706;
+    list-style-position: outside;
 }

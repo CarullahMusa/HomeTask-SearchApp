@@ -13,12 +13,7 @@ class getApi {
         try {
             const response = await (await fetch(`${this.url}${value}`, this.options)).json();
 
-            // response.map((information) => {
-            //     console.log(information)
-            //     addToHtml(information);
-            // });
             response.forEach((information) => {
-                // console.log(information)
                 addToHtml(information);
             });
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Dog Name</title>
+    <title>Dogs Breed</title>
     <link rel="shortcut icon" href="./image/jack-russell-terrier.png" type="image/x-icon">
 
     <!-- css fils -->
@@ -20,41 +20,33 @@
 
 </head>
 
-<body>
+<body class="h-[400vh] scrollbar scrollbar-thumb-amber-900 scrollbar-track-amber-50">
     <div class="container mt-7 mx-auto">
         <div class="form-wrapper gap-3 flex items-center flex-col">
-            <h1 class="font-bold text-2xl text-orange-950">Search Dog Breed</h1>
-            <div class="relative ">
+            <h1 class="font-bold text-2xl text-amber-900">Search Dog Breed</h1>
+            <div class="relative w-[350px] pt-4">
                 <input type="text"
-                    class="p-2 px-9 border active:border-orange-800 hover:border-orange-800 rounded-xl w-full "
+                    class="p-2 px-9 border-2 border-amber-600 hover:bg-amber-100 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:border-transparent placeholder:text-amber-900 placeholder:pl-1 rounded-xl w-full text-amber-950"
                     id="searchInput" placeholder="Enter Dog Name...">
-                <i class="fa-solid fa-paw left-3 top-3 absolute" style="color: #9a3412;"></i>
+                <i class="fa-solid fa-paw left-3 top-[1.8rem] absolute" style="color: #b45309;"></i>
             </div>
 
-            <div class="button-wrapper">
-                <button type="button" class="w-28 border p-2 rounded-md text-orange-950 hover:border-orange-800"
+            <div class="button-wrapper flex justify-between w-[255px]">
+                <button type="button"
+                    class="w-28 border-2 font-medium p-2 rounded-md border-amber-200 hover:bg-amber-100 text-amber-400 hover:border-none"
                     id="deleteBtn">Delete</button>
-                <button type="button" class="w-28 border p-2 rounded-md text-orange-950 hover:border-orange-800"
+                <button type="button"
+                    class="w-28 border-2 font-medium p-2 rounded-md border-amber-200 hover:bg-amber-100 text-amber-400 hover:border-none"
                     id="searchBtn">Search</button>
             </div>
         </div>
 
-        <div class="information-wrapper mt-10">
-            <!-- information will be add her -->
-            <div id="" class="dog-card items-center grid-cols-2 grid ">
-
+        <div class="information-wrapper mt-10 flex justify-center items-center ">
+            <div class="hidden dog-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-[700xp] gap-8 mb-10">
+                <!-- information will be add her -->
 
             </div>
-            <div class="dog-info hidden">
-                <select name="" id="selectOptions" class="">
-                    <option selected value="default">Select value...</option>
-                    <option value="good-with">Good with:</option>
-                    <option value="behaviour">behaviour: </option>
-                    <option value="size-life-expectancy">size and life expectancy: </option>
-                </select>
 
-                <div id="infoDisplay"></div>
-            </div>
         </div>
 
     </div>
